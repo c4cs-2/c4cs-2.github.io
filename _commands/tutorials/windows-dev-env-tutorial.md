@@ -30,4 +30,15 @@ The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you t
 - You should now be able to open bash directly from the command line. Note that if you have a different bash emulator installed (such as Git Bash) you do not want to be using that. WSL should have installed bash.exe into /usr/bin/bash. 
 - If you're correctly using bash in the WSL, running pwd should output
   > /mnt/c/Windows/System32
+- In general you don't want to (and may not have permission to) modify files in this directory, but running cd will take you to a home directory where you have full access.
+- From there, you now have access to all the linux commands you know and love, including apt-get and sudo. 
 
+**Moving files onto and off of the WSL**
+- From within the WSL, you can access your Windows-based disks in the directory /mnt
+  - /mnt will contain all disks on your hard drive. Most commonly, you will be looking in /mnt/c/Users/yourname
+  - you can access this directory within the WSL as freely as you would any other directory, meaning you can use commands such as mv and cp to move files from one place to the next.
+- Modifying Linux files with Windows tools is **not supported**
+  - but you can do it anyway if you like to live dangerously. 
+  - From a shell on Windows, you can find your WSL files at %userprofile#/AppData/Local/Packages
+  - From there, the directory to enter depends on which Linux distribution you use. For ubuntu, the directory is CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc
+  
