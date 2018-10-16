@@ -12,7 +12,8 @@ The main topics covered are the Linux Subsystem for Windows 10, including how to
 
 
 ## Linux Subsystem for Windows
-The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you to run native Linux command-line tools directly on Windows. Unfortunately, there is not a version that is compatible with older versions of Windows. For those using other Windows versions, please skip to the section on Cygwin below.
+The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you to run native Linux command line tools directly on Windows. The WSL sources your Windows path, so you can still run any Windows executable from the WSL command line. Unfortunately, there is not a version that is compatible with older versions of Windows. For those using other Windows versions, please skip to the section on Cygwin below.
+
 **Setup**
 - Step 1: install the Windows 10 Creator's Update
   - If you're automatically installing updates, you should already have this!
