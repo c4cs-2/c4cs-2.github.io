@@ -39,6 +39,6 @@ The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you t
   - you can access this directory within the WSL as freely as you would any other directory, meaning you can use commands such as mv and cp to move files from one place to the next.
 - Modifying Linux files with Windows tools is **not supported**
   - but you can do it anyway if you like to live dangerously. 
-  - From a shell on Windows, you can find your WSL files at %userprofile#/AppData/Local/Packages
+  - From a shell on Windows, you can find your WSL files at %userprofile%/AppData/Local/Packages
   - From there, the directory to enter depends on which Linux distribution you use. For ubuntu, the directory is CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc
   
