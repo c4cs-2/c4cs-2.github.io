@@ -4,7 +4,7 @@
 mkdir
 -------
 
-`mkdir` is a basic command for **M**a**k**ing **Dir**ectories.
+`mkdir` is a basic command for making directories.
 
 ~~~ bash
 $ mkdir newDirectory
