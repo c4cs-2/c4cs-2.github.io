@@ -52,7 +52,7 @@ a.txt b.txt d.txt
 
 ### `rm -f <filename>`
 
-The `-f` flag indicates an "force deletion." Normally, when we try to delete a "write protected" file (meaning that you can't write to the file) using rm command, the terminal prompt for confirmation of deletion. However, if we use the -f flag, the write protected file would be deleted immediately. 
+The `-f` flag indicates a "force deletion." Normally, when we try to delete a "write protected" file (meaning that you can't write to the file) using rm command, the terminal prompt for confirmation of deletion. However, if we use the -f flag, the write protected file would be deleted immediately. 
 
 ~~~ bash
 $ ls -l # showing that we can't write to a.txt b.txt c.txt
@@ -72,7 +72,7 @@ $ ls -l
 
 ### `rm -r <directory>`
 
-The `-r` flag indicates an "recursive deletion." This command will all subfolders and files in the specified directory.
+The `-r` or `-R` flag indicates a "recursive deletion." This command will delete all subfolders and files in the specified directory.
 
 ~~~ bash
 $ ls
@@ -89,9 +89,20 @@ B b.txt
 
 ~~~
 
+### Gotchas
 
+### Removing files with filenames starting with '-'
+To remove files starting with '-' use ./ or -- before the filename.
 
+~~~ bash
+$ ls
+-a.txt -b.txt c.txt
+$ rm ./-a.txt
+$ rm -- -b.txt
+$ ls
+c.txt
 
+~~~
 
 
 
