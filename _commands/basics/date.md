@@ -114,32 +114,3 @@ Wednesday, OCTOBER 17
 
 [See the GNU man page for more details.](https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html#date-invocation)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
