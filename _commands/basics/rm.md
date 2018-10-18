@@ -50,4 +50,24 @@ $ ls
 a.txt b.txt d.txt
 ~~~
 
+### `rm -f <filename>`
+
+The `-f` flag indicates an "force deletion." Normally, when we try to delete a "write protected" file (meaning that you can't write to the file) using rm command, the terminal prompt for confirmation of deletion. However, if we use the -f flag, the write protected file would be deleted immediately. 
+
+~~~ bash
+$ ls -l # showing that we can't write to a.txt b.txt c.txt
+-r--r--r--+ 1 User User 0 Jan  2 22:56 a.txt 
+-r--r--r--+ 1 User User 0 Jan  2 22:57 b.txt 
+-r--r--r--+ 1 User User 0 Jan  2 22:58 c.txt 
+$ rm a.txt # prompt may be slightly different depending on the OS
+override r--r--r--  User/User for a.txt? y
+$ ls -l 
+-r--r--r--+ 1 User User 0 Jan  2 22:57 b.txt 
+-r--r--r--+ 1 User User 0 Jan  2 22:58 c.txt 
+$ rm -f b.txt # no prompts
+$ ls -l
+-r--r--r--+ 1 User User 0 Jan  2 22:58 c.txt 
+
+~~~
+
 
