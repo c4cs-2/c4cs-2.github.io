@@ -89,6 +89,14 @@ B b.txt
 
 ~~~
 
+### `rm --help`
+
+This will display a help message that gives the user some idea as to what rm does and what are the flags that can be used.
+
+### `rm --version`
+
+This displays the version of rm on the machine.
+
 ### Gotchas
 
 ### Removing files with filenames starting with '-'
