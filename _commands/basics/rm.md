@@ -6,7 +6,7 @@ rm
 `rm` stands for "remove" and is used to remove objects such as files, directories, symbolic links, ...etc
 
 ~~~ bash
-#
+# Format: rm [options] <filename>
 $ rm a.txt
 $ rm b.txt c.txt
 $ rm -i d.txt
@@ -20,31 +20,34 @@ remove d.txt? y
 
 ### Useful Options / Examples
 
-### `git init`
+### `rm <filename(s)>`
 
-Initializes the current directory as a git repository
-
-~~~ bash
-$ git init
-~~~
-
-### `git status`
-
-`git status` shows the current state of your git repository. This lists the current branch, all the
-changes that have been made, and which changes are being tracked.
+Removes the file(s) with filename = <filename>
 
 ~~~ bash
-$ git status
-On branch master
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	modified:   hello.cpp
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	modified:   bye.cpp
-
+$ ls
+a.txt b.txt c.txt d.txt
+$ rm a.txt #remove a.txt
+$ ls #now a.txt is not in the directory anymore
+b.txt c.txt d.txt
+$ rm b.txt c.txt #you can also remove multiple files
+$ ls
+d.txt
 ~~~
+
+### `rm -i <filename>`
+
+The `-i` flag indicates an "interactive deletion" in which the terminal will confirm with the user before deleting each file. It will only delete files if the user types "Yes" "yes" "Y" or "y"
+
+~~~ bash
+$ ls
+a.txt b.txt c.txt d.txt
+$ rm -i a.txt b.txt c.txt
+remove a.txt? n
+remove b.txt? s
+remove c.txt? y
+$ ls
+a.txt b.txt d.txt
+~~~
+
+
