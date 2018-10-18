@@ -70,4 +70,28 @@ $ ls -l
 
 ~~~
 
+### `rm -r <directory>`
+
+The `-r` flag indicates an "recursive deletion." This command will all subfolders and files in the specified directory.
+
+~~~ bash
+$ ls
+A B b.txt
+$ tree A # shows all subfolder and files of directory A
+A
+├── a.txt
+├── A1
+│   └── a1.txt
+└── A2
+$ rm -r A # removes A, a.txt, A1, a1.txt, A2
+$ ls
+B b.txt
+
+~~~
+
+
+
+
+
+
 
