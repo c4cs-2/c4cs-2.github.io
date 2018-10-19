@@ -48,7 +48,7 @@ Cygwin is a Linux-style terminal for Windows. It's a good alternative to the Win
 
 **Setup:**
   - Download the appropriate version of setup.exe for your machine from https://www.cygwin.com/install.html and run it
-    - It is very important not to lose this executable, because you actually use it to download new packages to Cygwin!
+    - It is very important not to lose this executable, because you actually use it to download new packages to Cygwin! Setup.exe *is* your package manager.
   - When it asks you to select a download source, it is referring to the source for installing future packages. The simplest choice is to "install from internet"
     - It will ask you to choose a download website, but there is no way to know which mirror will be best in advance, so you may as well choose the default or enter in a custom URL if you happen to have one. You can always change this later when installing new packages.
   - Cygwin will then ask you which packages you want to install, which is the big step. If you let Cygwin install its defaults, it will grab most of the standard packages and executables you would find on Linux. Some notable exceptions include sudo and apt-get, which can't be installed directly, but I will describe work-arounds below. If there is anything you particularly want or do not want, type the name in the search bar and enable it or disable it as desired. 
