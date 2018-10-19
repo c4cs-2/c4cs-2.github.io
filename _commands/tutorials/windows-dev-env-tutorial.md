@@ -51,12 +51,12 @@ Cygwin is a Linux-style terminal for Windows. It's a good alternative to the Win
     - It is very important not to lose this executable, because you actually use it to download new packages to Cygwin! Setup.exe *is* your package manager.
   - When it asks you to select a download source, it is referring to the source for installing future packages. The simplest choice is to "install from internet"
     - It will ask you to choose a download website, but there is no way to know which mirror will be best in advance, so you may as well choose the default or enter in a custom URL if you happen to have one. You can always change this later when installing new packages.
-  - Cygwin will then ask you which packages you want to install, which is the big step. If you let Cygwin install its defaults, it will grab most of the standard packages and executables you would find on Linux. Some notable exceptions include sudo and apt-get, which can't be installed directly, but I will describe work-arounds below. If there is anything you particularly want or do not want, type the name in the search bar and enable it or disable it as desired. 
+  - Cygwin will then ask you which packages you want to install, which is the big step. If you let Cygwin install its defaults, it will grab most of the standard packages and executables you would find on Linux. Some notable exceptions include apt-get and sudo, which can't be installed directly, but I will describe work-arounds below. If there is anything you particularly want or do not want, type the name in the search bar and enable it or disable it as desired. 
   - Run the cygwin terminal desktop app, and cd into /cygdrive/c/ to access your C: drive.
 
 **Installing new packages**
   - To install (or uninstall) packages onto Cygwin, rerun the setup.exe and do it all over again!
-  - Don't worry, you won't have to re-download all the packages you originally installed. Just find the packages you want to change (install or uninstall) and select them as normal.
+  - Don't worry, you won't have to re-download all the packages you originally installed. Just find the packages you want to change (install or uninstall) and select them as needed.
   - This is also when you'll have the chance to change the packpage repository Cygwin uses.
   - If you would like a command-line package installer, or else if there are packages that you can't find through the Cygwin package manager, I recommend installing Chocolatey, a package manager for windows. Note that this will require the ability to run elevated commands, so the section on sudo below will be particularly useful. 
   
