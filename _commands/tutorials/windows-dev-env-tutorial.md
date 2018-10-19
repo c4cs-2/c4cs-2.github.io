@@ -54,3 +54,19 @@ Cygwin is a Linux-style terminal for Windows. It's a good alternative to the Win
   - Cygwin will then ask you which packages you want to install, which is the big step. If you let Cygwin install its defaults, it will grab most of the standard packages and executables you would find on Linux. Some notable exceptions include sudo and apt-get, which can't be installed directly, but I will describe work-arounds below. If there is anything you particularly want or do not want, type the name in the search bar and enable it or disable it as desired. 
   - Run the cygwin terminal desktop app, and cd into /cygdrive/c/ to access your C: drive.
 
+**Installing new packages**
+  - To install (or uninstall) packages onto Cygwin, rerun the setup.exe and do it all over again!
+  - Don't worry, you won't have to re-download all the packages you originally installed. Just find the packages you want to change (install or uninstall) and select them as normal.
+  - This is also when you'll have the chance to change the packpage repository Cygwin uses.
+  
+**Sudo on Cygwin**
+  - Windows does not have sudo per se, but you achieve the same effects by running a command with elevated privileges (i.e., as Admin), and that can be easily scripted and named "sudo."
+  - Create a file called sudo in some directory on your PATH (e.g., ~/bin/sudo) and add the following text
+    > #!/usr/bin/bash
+    
+    > cygstart --action=runas "$@"
+  - run the following command:
+    > chmod +x /path/to/sudo
+  - that's it! You can now run sudo [command] just as you would on Linux. 
+  
+
