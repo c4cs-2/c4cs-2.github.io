@@ -37,7 +37,7 @@ The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you t
 **Moving files onto and off of the WSL**
 - From within the WSL, you can access your Windows-based disks in the directory /mnt
   - /mnt will contain all disks on your hard drive. Most commonly, you will be looking in /mnt/c/Users/yourname
-  - you can access this directory within the WSL as freely as you would any other directory, meaning you can use commands such as mv and cp to move files from one place to the next.
+  - You can access this directory within the WSL as freely as you would any other directory, meaning you can use commands such as mv and cp to move files from one place to the next.
 - Modifying Linux files with Windows tools is **not supported**
   - but you can do it anyway if you like to live dangerously. 
   - From a shell on Windows, you can find your WSL files at %userprofile%/AppData/Local/Packages
@@ -47,10 +47,10 @@ The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you t
 Cygwin is a Linux-style terminal for Windows. It's a good alternative to the Windows Subsystem for Linux for those who are not running Windows 10. It's main feature is the built-in package installer that functions as an a replacement for apt-get and other command line package installers.
 
 **Setup:**
-  - download the appropriate version of setup.exe for your machine from https://www.cygwin.com/install.html and run it
-    - it is very important not to lose this executable, because you actually use it to download new packages to Cygwin!
+  - Download the appropriate version of setup.exe for your machine from https://www.cygwin.com/install.html and run it
+    - It is very important not to lose this executable, because you actually use it to download new packages to Cygwin!
   - When it asks you to select a download source, it is referring to the source for installing future packages. The simplest choice is to "install from internet"
-    - it will ask you to choose a download website, but there is no way to know which mirror will be best in advance, so you may as well choose the default or enter in a custom URL if you happen to have one. You can always change this later when installing new packages.
+    - It will ask you to choose a download website, but there is no way to know which mirror will be best in advance, so you may as well choose the default or enter in a custom URL if you happen to have one. You can always change this later when installing new packages.
   - Cygwin will then ask you which packages you want to install, which is the big step. If you let Cygwin install its defaults, it will grab most of the standard packages and executables you would find on Linux. Some notable exceptions include sudo and apt-get, which can't be installed directly, but I will describe work-arounds below. If there is anything you particularly want or do not want, type the name in the search bar and enable it or disable it as desired. 
   - Run the cygwin terminal desktop app, and cd into /cygdrive/c/ to access your C: drive.
 
@@ -65,8 +65,8 @@ Cygwin is a Linux-style terminal for Windows. It's a good alternative to the Win
     > #!/usr/bin/bash
     
     > cygstart --action=runas "$@"
-  - run the following command:
+  - Run the following command:
     > chmod +x /path/to/sudo
-  - that's it! You can now run sudo [command] just as you would on Linux. 
+  - That's it! You can now run sudo [command] just as you would on Linux. 
   
 
