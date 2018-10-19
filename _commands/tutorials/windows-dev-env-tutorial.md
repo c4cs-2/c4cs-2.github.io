@@ -8,10 +8,10 @@ This tutorial walks through how to make Windows work like linux, covering two wa
 ## Introduction
 This tutorial is for people who want to set up a development environment on Windows where they can use common Linux commands (such as sed, awk, and grep) and other Linux-first tools (such as Ruby, Python, etc.) alongside Windows applications and without running a Virtual Machine with Linux installed, which may require more resources in terms of memory and CPU. 
 
-The main topics covered are the Linux Subsystem for Windows 10, including how to install the update that enables it, how to activate the subsystem, and how to access Windows files from within the subsystem, and vice versa, and Cygwin, including how to install it, how to add new packages, how to run commands as sudo, and how to install the Chocolatey package manager. 
+The main topics covered are the Windows Subsystem for Linux, including how to install the update that enables it, how to activate the subsystem, and how to access Windows files from within the subsystem, and vice versa, and Cygwin, including how to install it, how to add new packages, how to run commands as sudo, and how to install the Chocolatey package manager. 
 
 
-## Linux Subsystem for Windows
+## Windows Subsystem for Linux
 The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you to run native Linux command line tools directly on Windows. The WSL sources your Windows path, so you can still run any Windows executable from the WSL command line. Unfortunately, there is not a version that is compatible with older versions of Windows. For those using other Windows versions, please skip to the section on Cygwin below.
 
 **Setup**
@@ -43,3 +43,5 @@ The Windows Subsystem for Linux (WSL) is a Windows 10 feature that enables you t
   - From a shell on Windows, you can find your WSL files at %userprofile%/AppData/Local/Packages
   - From there, the directory to enter depends on which Linux distribution you use. For ubuntu, the directory is CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc
   
+## Cygwin
+Cygwin is a Linux-style terminal for Windows. It's a good alternative to the Windows Subsystem for Linux for those who are not running Windows 10. It's main feature is the built-in package installer that functions as an a replacement for apt-get and other command line package installers.
