@@ -8,7 +8,7 @@ This tutorial walks through how to make Windows work like linux, covering two wa
 ## Introduction
 This tutorial is for people who want to set up a development environment on Windows where they can use common Linux commands (such as sed, awk, and grep) and other Linux-first tools (such as Ruby, Python, etc.) alongside Windows applications and without running a Virtual Machine with Linux installed, which may require more resources in terms of memory and CPU. 
 
-The main topics covered are the Windows Subsystem for Linux, including how to install the update that enables it, how to activate the subsystem, and how to access Windows files from within the subsystem, and vice versa, and Cygwin, including how to install it, how to add new packages, how to run commands as sudo, and how to install the Chocolatey package manager. 
+The main topics covered are the Windows Subsystem for Linux, including how to install the update that enables it, how to activate the subsystem, and how to access Windows files from within the subsystem, and vice versa, and Cygwin, including how to install it, how to add new packages when you can't use apt-get, and how to run commands as sudo.
 
 
 ## Windows Subsystem for Linux
@@ -58,6 +58,7 @@ Cygwin is a Linux-style terminal for Windows. It's a good alternative to the Win
   - To install (or uninstall) packages onto Cygwin, rerun the setup.exe and do it all over again!
   - Don't worry, you won't have to re-download all the packages you originally installed. Just find the packages you want to change (install or uninstall) and select them as normal.
   - This is also when you'll have the chance to change the packpage repository Cygwin uses.
+  - If you would like a command-line package installer, or else if there are packages that you can't find through the Cygwin package manager, I recommend installing Chocolatey, a package manager for windows. Note that this will require the ability to run elevated commands, so the section on sudo below will be particularly useful. 
   
 **Sudo on Cygwin**
   - Windows does not have sudo per se, but you achieve the same effects by running a command with elevated privileges (i.e., as Admin), and that can be easily scripted and named "sudo."
