@@ -55,7 +55,8 @@ This is a common and convenient way to obtain more information about all current
 	-p	select by PID
 	-s	select by Session ID
 
-There are of course many more, but these should be enough to suffice for most needed operations
+There are of course many more options, but these should be enough to suffice for most needed operations
+
 
 
 
