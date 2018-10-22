@@ -3,7 +3,7 @@
 **"Linux" Development Environment on Windows**
 -------
 
-This tutorial walks through how to make Windows work like linux, covering two ways to set up an environment that can use common Linux commands, that has a package installer, and that can use sudo to run elevated commands. Specifically, it covers setting up the Windows Subsytsem for Linux on Windows 10, and installing Cygwin on other versions of Windows.
+This tutorial walks through how to make Windows work like linux, covering two ways to set up an environment that can use common Linux commands, that has a package installer, and that can use sudo to run elevated commands. Specifically, it covers setting up the Windows Subsytsem for Linux on Windows 10 and installing Cygwin on other versions of Windows.
 
 ## Introduction
 This tutorial is for people who want to set up a development environment on Windows where they can use common Linux commands (such as sed, awk, and grep) and other Linux-first tools (such as Ruby, Python, etc.) alongside Windows applications and without running a Virtual Machine with Linux installed, which may require more resources in terms of memory and CPU. 
