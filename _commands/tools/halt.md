@@ -14,7 +14,7 @@ The commands halt, poweroff, and reboot are all able to power-off, halt or reboo
 Halts the machine and ignores which command was invoked
 
 ### 'halt --reboot'
- Reboots the machine and ignores which command was invoked
+Reboots the machine and ignores which command was invoked
 
 ### 'halt -p', 'halt —poweroff'
 Powers-off the machine and ignores which command was invoked
