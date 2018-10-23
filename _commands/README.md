@@ -1,7 +1,7 @@
 Command Webpages
 ================
 
-If you'd like to work on a the documentation for a command, first check if
+If you'd like to work on the documentation for a command, first check if
 there's an [open issue](https://github.com/c4cs/c4cs.github.io/issues) so that
 you don't conflict with someone else's efforts.
 
