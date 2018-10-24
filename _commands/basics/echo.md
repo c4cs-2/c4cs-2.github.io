@@ -15,17 +15,22 @@ Hello World!
 
 ### Useful Options
 
-| `-n` | do not output the trailing newline |
-| `-e` | enable interpretation of backslash escapes |
-| `-E` | disable interpretation of backslash escapes (default) |
+`-n` will stop `echo` from outputting a trailing newline.
+
+`-e` will enable interpretation of backslash escapes. See below for examples
+of recognized escape sequences.
+
+`-E` will disable interpretation of backslash escapes. This is the default.
 
 ### Some Recognized Escape Sequences
 
-| `\\` | backslash |
-| `\n` | new line |
-| `\r` | carriage return |
-| `\t` | horizontal tab |
-| `\v` | vertical tab |
+| Sequence  | Character |
+| :------:  | :-------- |
+| `\\`      | backslash |
+| `\n`      | new line |
+| `\r`      | carriage return |
+| `\t`      | horizontal tab |
+| `\v`      | vertical tab |
 
 ### Example Commands
 
