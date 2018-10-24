@@ -27,6 +27,6 @@ $ du -b
 
 ##### Check memory of a specific file with maximum depth
 
-#### du \'97h -d 1
+#### du -h -d 1
 
 ##### Get human readable output
