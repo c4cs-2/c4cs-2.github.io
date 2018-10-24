@@ -25,7 +25,7 @@ of recognized escape sequences.
 ### Some Recognized Escape Sequences
 
 | Sequence  | Character |
-| :------:  | :-------- |
+| :-------  | --------: |
 | `\\`      | backslash |
 | `\n`      | new line |
 | `\r`      | carriage return |
