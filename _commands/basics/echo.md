@@ -34,7 +34,7 @@ of recognized escape sequences.
 
 ### Example Commands
 
-Using the `-e` option allows inclusion of escape sequences.
+The `-e` option to enable inclusion of escape sequences may be used as follows.
 
 ~~~ bash
 $ echo -e "I love writing text on\nmultiple lines and\tusing tabs."
@@ -42,7 +42,7 @@ I love writing text on
 multiple lines and      using tabs.
 ~~~
 
-Echo can be used to write to a file using output redirection:
+`echo` can also be used to write to a file using output redirection:
 
 ~~~ bash
 $ touch myfile.txt
