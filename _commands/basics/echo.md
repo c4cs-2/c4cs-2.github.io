@@ -4,12 +4,14 @@
 echo
 ----
 
-Send a line of text to standard output.
+`echo` allows you to send a line of text to standard output.
 
 ~~~ bash
 $ echo "Hello World!"
 Hello World!
 ~~~
+
+<!--more-->
 
 ### Useful Options
 
