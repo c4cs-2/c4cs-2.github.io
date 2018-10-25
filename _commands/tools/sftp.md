@@ -11,7 +11,7 @@ this logs you into the remote system (after prompting you for your password) and
       Connected to hostname.
     sftp>
 
-### Retrieve file (without Interactive Session)
+### Retrieve file (without interactive session)
 this allows you to log into the remote system (after prompting you for your password) and automatically retrieve files whose path is specified in the command and exit 
 
     $ sftp user@hostname:documents/example.zip
