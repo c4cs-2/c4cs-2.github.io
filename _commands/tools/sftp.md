@@ -32,7 +32,7 @@ this allows you to specify wildcards in the filename for files to retrieve
 
     $ sftp user@hostname:documents/*.zip
 
-this would retrieve all the files in the /documents directory that has the .zip extension
+this would retrieve all the files in the documents directory on the remote system that has the .zip extension
   
 ### Some standard SFTP commands
 
