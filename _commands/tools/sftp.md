@@ -16,7 +16,7 @@ this allows you to log into the remote system (after prompting you for your pass
 
     $ sftp user@hostname:documents/example.zip
       user@hostname's password:
-      Fetching /home/myname/documents/example.zip to example.zip
+      Fetching /home/user/documents/example.zip to example.zip
 
 you can also specify the location where you want to download the file
 
