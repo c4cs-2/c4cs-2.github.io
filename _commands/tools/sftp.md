@@ -46,9 +46,9 @@ Command | Description
 **exit** | close the session and exit sftp
 **get** [-Ppr] [r_path] [l_path] | retrieve r_path from remote host and download it to l_path on local machine; -P and -p flags (if used) copies permissions and access times; -r flag (if used) copies directories recursively
 **help** | get a help message that lists the sftp commands
-**cd** [path] | change working directory to path
+**cd** [directory] | change working directory
 **ls** | list files in current directory
-**mkdir** [path] | create a new directory 
+**mkdir** [directory] | create a new directory 
 **put** [-Ppr] [l_path] [r_path] | upload local_path to remote_path on the remote machine; -P and -p flags (if used) copies permissions and access times; -r flag (if used) copies directories recursively
 **pwd** | print working directory
 **rename** [old_path] [new_path] | rename old_path to new_path
