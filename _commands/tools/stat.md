@@ -32,10 +32,8 @@ $ stat c4cs-2.github.io
 
 ```
 `--help`
-```
 displays possible commands and exits
-```
+
 `--version`
-```
 output version information of `stat` and exits
 ```
